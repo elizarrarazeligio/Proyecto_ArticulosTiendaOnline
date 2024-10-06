@@ -4,19 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Primera Tienda Online</title>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="tienda_online.ico" />
   </head>
   <body>
-    <header>
-      <h1 class="header__title"></h1>
-    </header>
-    <main>
-      <section class="page">
-        <section class="articles"></section>
-      </section>
-    </main>
-    <footer></footer>
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title"></h1>
+      </header>
+      <main class="content">
+        <section class="articles">
+          <div class="articles__visual-bar">
+            <button
+              class="articles__button articles__button_type_grid"
+            ></button>
+            <button
+              class="articles__button articles__button_type_horizontal"
+            ></button>
+            <button
+              class="articles__button articles__button_type_slide"
+            ></button>
+          </div>
+          <div class="articles__items"></div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <template id="item-hoizontal"></template>
+
+    <template id="item-grid"></template>
+
+    <template id="item-slide"></template>
 
     <script type="module" src="./scripts/script.js"></script>
     <script type="module" src="./scripts/Articles.js"></script>
