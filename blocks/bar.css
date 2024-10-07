@@ -1,0 +1,45 @@
+.bar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar__visual {
+  display: flex;
+  gap: 10px;
+}
+
+.bar__button {
+  height: 40px;
+  width: 40px;
+  background-color: #faf7f0;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bar__button:hover {
+  opacity: 0.5;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar__button_type_grid {
+  background-image: url(../images/grid_button.png);
+}
+
+.bar__button_type_horizontal {
+  background-image: url(../images/horizontal_button.png);
+}
+
+.bar__button_type_slide {
+  background-image: url(../images/slide.png);
+}
+
+.bar__add {
+}
+
+.bar__button_type_add {
+  background-image: url(../images/add_button.png);
+}

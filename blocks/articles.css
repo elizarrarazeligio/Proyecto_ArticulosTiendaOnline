@@ -3,30 +3,6 @@
   padding: 30px;
 }
 
-.articles__visual-bar {
+.articles__bar {
   background-color: #d8d2c2;
-  padding: 10px;
-  display: flex;
-  gap: 10px;
-}
-
-.articles__button {
-  height: 40px;
-  width: 40px;
-  background-color: #faf7f0;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.articles__button_type_grid {
-  background-image: url(../images/grid_button.png);
-}
-
-.articles__button_type_horizontal {
-  background-image: url(../images/horizontal_button.png);
-}
-
-.articles__button_type_slide {
-  background-image: url(../images/slide.png);
 }
