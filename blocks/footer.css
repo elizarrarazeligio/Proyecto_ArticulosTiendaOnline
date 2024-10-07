@@ -1,0 +1,10 @@
+.footer {
+  background-color: #4a4947;
+  display: flex;
+  padding: 30px;
+}
+
+.footer__copyright {
+  color: white;
+  font-weight: normal;
+}
