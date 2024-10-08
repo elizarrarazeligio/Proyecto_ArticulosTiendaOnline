@@ -1,0 +1,47 @@
+.item {
+  background-color: #d8d2c2;
+  border-radius: 10px;
+  display: flex;
+  padding: 30px;
+  height: 260px;
+}
+
+.item__image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item__description {
+  margin-left: 30px;
+  color: #4a4947;
+  display: flex;
+  flex-direction: column;
+}
+
+.item__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item__paragraph {
+  height: 120px;
+  width: 870px;
+  font-size: 20px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  background-color: #faf7f0;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.item__button {
+  height: 25.5px;
+  width: 100px;
+  border-radius: 5px;
+  align-self: flex-end;
+}

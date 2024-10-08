@@ -6,3 +6,7 @@
 .articles__bar {
   background-color: #d8d2c2;
 }
+
+.articles__items {
+  padding: 30px;
+}
