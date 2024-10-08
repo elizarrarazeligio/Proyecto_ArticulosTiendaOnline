@@ -26,77 +26,17 @@
             </div>
           </div>
 
-          <div class="articles__items articles__items_template_slide">
-            <div class="item item_type_slide">
-              <h2 class="item__title item__title_type_slide">
+          <div class="articles__items articles__items_template_grid">
+            <div class="item item_type_grid">
+              <h2 class="item__title item__title_type_grid">
                 Laptop MovePad V5 22\" 16GB 264GB Negro
               </h2>
               <img
                 src="./images/laptop.jpg"
                 alt="Imagen de lentes"
-                class="item__image item__image_type_slide"
+                class="item__image item__image_type_grid"
               />
-              <div class="item__description item__description_type_slide">
-                <p class="item__paragraph item__paragraph_type_slide">
-                  Navega, explora y conéctate con confianza en esta Laptop. El
-                  MovePad V5 ofrece un rendimiento de alta capacidad de
-                  respuesta en un chasis delgado y compacto de 22 mm, lo que
-                  hace que la multitarea en movimiento sea muy sencilla.
-                  Aprovecha al máximo tu dispositivo con una pantalla sin marco
-                  para una mayor pantalla y parlantes, junto con 11 horas de
-                  duración de batería y carga rápida. Ideal para videollamadas,
-                  la cámara de 720P viene con un obturador de privacidad para
-                  mantener alejadas las miradas indiscretas, así como con
-                  cancelación inteligente de ruido para eliminar el ruido de
-                  fondo.
-                </p>
-                <button class="item__button">Comprar</button>
-              </div>
-            </div>
-
-            <div class="item item_type_slide">
-              <h2 class="item__title item__title_type_slide">
-                Laptop MovePad V5 22\" 16GB 264GB Negro
-              </h2>
-              <img
-                src="./images/laptop.jpg"
-                alt="Imagen de lentes"
-                class="item__image item__image_type_slide"
-              />
-              <div class="item__description item__description_type_slide">
-                <p class="item__paragraph item__paragraph_type_slide"></p>
-                <button class="item__button">Comprar</button>
-              </div>
-            </div>
-
-            <div class="item item_type_slide">
-              <h2 class="item__title item__title_type_slide">
-                Laptop MovePad V5 22\" 16GB 264GB Negro
-              </h2>
-              <img
-                src="./images/laptop.jpg"
-                alt="Imagen de lentes"
-                class="item__image item__image_type_slide"
-              />
-              <div class="item__description item__description_type_slide">
-                <p class="item__paragraph item__paragraph_type_slide"></p>
-                <button class="item__button">Comprar</button>
-              </div>
-            </div>
-
-            <div class="item item_type_slide">
-              <h2 class="item__title item__title_type_slide">
-                Laptop MovePad V5 22\" 16GB 264GB Negro
-              </h2>
-              <img
-                src="./images/laptop.jpg"
-                alt="Imagen de lentes"
-                class="item__image item__image_type_slide"
-              />
-              <div class="item__description item__description_type_slide">
-                <p class="item__paragraph item__paragraph_type_slide"></p>
-                <button class="item__button">Comprar</button>
-              </div>
+              <button class="item__button item__button_center">Comprar</button>
             </div>
           </div>
         </section>
@@ -119,9 +59,28 @@
       </div>
     </template>
 
-    <template id="item-grid"></template>
+    <template id="item-slide">
+      <div class="articles__items_template_slide">
+        <div class="item item_type_slide">
+          <h2 class="item__title item__title_type_slide"></h2>
+          <img src="" alt="" class="item__image item__image_type_slide" />
+          <div class="item__description item__description_type_slide">
+            <p class="item__paragraph item__paragraph_type_slide"></p>
+            <button class="item__button">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </template>
 
-    <template id="item-slide"></template>
+    <template id="item-grid">
+      <div class="articles__items_template_grid">
+        <div class="item item_type_grid">
+          <h2 class="item__title item__title_type_grid"></h2>
+          <img src="" alt="" class="item__image item__image_type_grid" />
+          <button class="item__button item__button_center">Comprar</button>
+        </div>
+      </div>
+    </template>
 
     <script type="module" src="./scripts/script.js"></script>
     <script type="module" src="./scripts/Articles.js"></script>
