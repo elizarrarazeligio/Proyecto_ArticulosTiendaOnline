@@ -17,4 +17,16 @@ const initialArticles = [
     description:
       "La lente de las gafas utiliza un filtro de luz azul, que bloquea la luz azul emitida cuando usa la computadora, el teléfono móvil, el iPad, el juego, etc. Muy adecuado para empleados de oficina o cualquier persona que necesite mirar la pantalla todo el día.",
   },
+  {
+    name: "Cámara Híbrida Mirrorless con Lente 28-60mm",
+    image: "./images/camara.jpg",
+    description:
+      "Un diseño innovador para una nueva generación. Gracias a su excepcional rendimiento, la cámara híbrida será tu mejor opción, ya que proporciona imágenes impresionantes y permite compartir contenido al instante. Además, se diseñó para hacer realidad la visión creativa de cualquier profesional.",
+  },
+  {
+    name: "Bocina Portátil V2 Blanca",
+    image: "./images/bocina.jpg",
+    description:
+      "El altavoz Bluetooth portátil V2 ofrece sonido profesional original mediante su controlador optimizado y radiadores de graves de bombeo. Hasta 30 horas de tiempo de reproducción y una práctica batería externa integrada para mantener tus dispositivos cargados para mantener la fiesta durante toda la noche. ",
+  },
 ];
