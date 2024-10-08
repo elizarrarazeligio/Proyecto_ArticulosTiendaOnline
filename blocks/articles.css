@@ -10,3 +10,21 @@
 .articles__items {
   padding: 30px;
 }
+
+.articles__items_template_horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.articles__items_template_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.articles__items_template_slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
