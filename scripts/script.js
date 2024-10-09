@@ -1,4 +1,4 @@
-import { Articles } from "./Articles.js";
+import { Articles, GridArticles } from "./Articles.js";
 
 const articlesSection = document.querySelector(".articles__items");
 
@@ -36,7 +36,11 @@ const initialArticles = [
 ];
 
 initialArticles.forEach((item) => {
-  const newArticle = new Articles(item, "#item-horizontal");
+  const newArticle = new Articles(
+    item,
+    "#item-horizontal",
+    "articles__items_template_horizontal"
+  );
   const articleElement = newArticle.generateArticle();
 
   articlesSection.append(articleElement);

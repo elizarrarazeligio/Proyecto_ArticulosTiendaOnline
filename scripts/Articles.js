@@ -1,14 +1,15 @@
 class Articles {
-  constructor(article, cardSelector) {
+  constructor(article, tempSelector, articleSelector) {
     this._name = article.name;
     this._image = article.image;
     this._description = article.description;
-    this._cardSelector = cardSelector;
+    this._articleSelector = articleSelector;
+    this._tempSelector = tempSelector;
   }
 
   _getTemplate() {
     const articleTemplate = document
-      .querySelector(this._cardSelector)
+      .querySelector(this._tempSelector)
       .content.querySelector(".item")
       .cloneNode(true);
 
@@ -23,7 +24,7 @@ class Articles {
 
     document
       .querySelector(".articles__items")
-      .classList.add("articles__items_template_horizontal");
+      .classList.add(this._articleSelector);
 
     this._newArticle.querySelector(".item__title").textContent = this._name;
     this._newArticle.querySelector(".item__image").src = this._image;
@@ -37,4 +38,26 @@ class Articles {
   }
 }
 
-export { Articles };
+class GridArticles extends Articles {
+  // constructor(article, articleSelector) {
+  //   super(articleSelector);
+  //   this._articleSelector = articleSelector;
+  //   this._name = article.name;
+  //   this._image = article.image;
+  // }
+  // generateArticle() {
+  //   this._newArticle = super._getTemplate();
+  //   super._setEventListeners();
+  //   document
+  //     .querySelector(".articles__items")
+  //     .classList.add(super._articleSelector);
+  //   this._newArticle.querySelector(".item__title").textContent = this._name;
+  //   this._newArticle.querySelector(".item__image").src = this._image;
+  //   this._newArticle.querySelector(
+  //     ".item__image"
+  //   ).alt = `Imagen de ${this._name}`;
+  //   return this._newArticle;
+  // }
+}
+
+export { Articles, GridArticles };
