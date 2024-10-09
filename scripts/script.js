@@ -1,3 +1,7 @@
+import { Articles } from "./Articles.js";
+
+const articlesSection = document.querySelector(".articles__items");
+
 const initialArticles = [
   {
     name: 'Laptop MovePad V5 22" 16GB 264GB Negro',
@@ -30,3 +34,10 @@ const initialArticles = [
       "El altavoz Bluetooth portátil V2 ofrece sonido profesional original mediante su controlador optimizado y radiadores de graves de bombeo. Hasta 30 horas de tiempo de reproducción y una práctica batería externa integrada para mantener tus dispositivos cargados para mantener la fiesta durante toda la noche. ",
   },
 ];
+
+initialArticles.forEach((item) => {
+  const newArticle = new Articles(item, "#item-horizontal");
+  const articleElement = newArticle.generateArticle();
+
+  articlesSection.append(articleElement);
+});
