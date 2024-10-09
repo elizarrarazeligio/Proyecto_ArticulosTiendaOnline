@@ -115,6 +115,7 @@
   color: #4a4947;
   background-color: #faf7f0;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .item__button:hover {

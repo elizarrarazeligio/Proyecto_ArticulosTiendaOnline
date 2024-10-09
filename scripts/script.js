@@ -35,9 +35,22 @@ const initialArticles = [
   },
 ];
 
-initialArticles.forEach((item) => {
-  const newArticle = new Articles(item, "#item-grid");
-  const articleElement = newArticle.generateArticle();
+const renderArticles = (option) => {
+  articlesSection.innerHTML = "";
+  initialArticles.forEach((item) => {
+    const newArticle =
+      option === "grid"
+        ? new Articles(item, "#item-grid")
+        : option === "horizontal"
+        ? new OtherArticles(item, "#item-horizontal")
+        : new OtherArticles(item, "#item-slide");
 
-  articlesSection.append(articleElement);
-});
+    const articleElement = newArticle.generateArticle();
+
+    articlesSection.append(articleElement);
+  });
+};
+
+renderArticles("grid");
+
+export { renderArticles, articlesSection };
