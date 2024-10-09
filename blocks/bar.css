@@ -13,6 +13,7 @@
   height: 40px;
   width: 40px;
   background-color: #faf7f0;
+  border: 2px solid #4a4947;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,7 +23,6 @@
 
 .bar__button:hover {
   opacity: 0.5;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .bar__button_type_grid {
