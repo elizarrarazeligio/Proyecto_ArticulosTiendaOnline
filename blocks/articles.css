@@ -24,7 +24,7 @@
 }
 
 .articles__items_template_slide {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  overflow: scroll;
   gap: 15px;
 }
